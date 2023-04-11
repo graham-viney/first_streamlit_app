@@ -46,9 +46,9 @@ streamlit.stop()
 streamlit.header("The fruit load list contains:")
 #snokeflake-related functions
 def get_fruit_load_list():
-      with my_cnx.cursor() as my_cnx
-      my_cur.execute("SELECT * from pc_rivery_db.public.fruit_load_list")
-      return my_cur.fetchall()
+  with my_cnx.cursor() as my_cnx:
+    my_cur.execute("SELECT * from pc_rivery_db.public.fruit_load_list")
+  return my_cur.fetchall()
 
 #add button to load fruit 
 if streamlit.button('Get Fruit Load List')

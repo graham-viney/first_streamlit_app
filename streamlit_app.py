@@ -69,6 +69,6 @@ if streamlit.button('Add fruit to the List'):
   #my_cnx.close()
   streamlit.write(back_from_function)
 
-streamlit.stop()
+#streamlit.stop()
 
 # Display the table on the page.

@@ -21,7 +21,6 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 streamlit.dataframe(fruits_to_show)
 
-
 #create repeatable code block (called a function)
 def get_fruityvice_data(this_fruit_choice):
       fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ fruit_choice)
@@ -47,7 +46,7 @@ streamlit.stop()
 streamlit.header("The fruit load list contains:")
 #snokeflake-related functions
 def get_fruit_load_list():
-      with my_cnx.cursor() as my_cnx:
+      with my_cnx.cursor() as my_cnx
       my_cur.execute("SELECT * from pc_rivery_db.public.fruit_load_list")
       return my_cur.fetchall()
 
